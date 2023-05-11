@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="css/style.css"/>
+</head>
+<body>
+    <section class="wrapper">
+        <section class="innerWrapper">
+        <section class="child">
+            <form>
+            <section class="googleSearch">
+                <input type="search" placeholder="Search" id="googleSearchField">
+                <button id="googleSearchButton">Search</button>
+            </section>
+            </form>
+            <div class="socialmedia">
+            </div>
+            <div class="taskWrapper">
+            </div>
+
+            <div class="buttonGroup">
+            <button id="relax">Relax</button>
+            <button class="alarmTrigger">Alarm</button>
+            </div>
+            <img src="media/setting.png" class="setting">
+            <div class="notesWrapper">
+                <div class="notesChild">
+                    <button id="editNotes"><img src="media/edit.png"></button>
+                    <textarea id="noteTextarea"></textarea>
+                    <a href="#" id="noteSave">Save</a>
+                </div>
+            </div>
+        </section>
+        <section class="child">
+
+            <div class="insertTodoSection">
+            <form>
+            <input type="search" placeholder="mention your todo item" id="todoSearchBar" value="">
+            <select name="" id="rankingToDo">
+                <option value="select">Ranking</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            </form>
+            </div>
+            <select class="filterToDoItem">
+                <option value="any">All</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <div class="todoSectionWrapper">
+            </div>
+        </section>
+    </section>
+    
+    <!-- Relax Popup Wrapper -->
+    <section class="relaxWrapper">
+        <label class="switch">
+            <input type="checkbox">
+            <div class="slider"></div>
+        </label>
+        <div class = 'relaxFirstChild'>
+            
+                <div class="relaxAnimationCircle1">
+                <div class="relaxAnimationCircle2">
+                <img src="media/Buddh-removebg-preview.png">
+                </div>
+                </div>
+               
+            <div class="relaxFirstChildButtonWrapper">
+            <button id="pauseRelaxMusic">Pause</button>
+            <button id="exitRelax">Exit</button>
+            </div>
+            <p id="relaxQuote"></p>
+        </div>
+        
+    </section>
+    </section> 
+
+    <!-- Alarm Section -->
+    <section class="alarmClockSection">
+        <span class="alarmClockSectionClose"><img src='media/closeButton.png'></span>
+        <div class="alarmClockSectionWrapper">
+        <br>
+        <img src="media/alarm.png">
+        <p class="alarmTimer"><span class="hourShow"></span><span class="minuteShow"></span></p>
+        <div class="alarmSetOption">
+        <select id="setHour">
+            <option value="0">Hours</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </select>
+
+        <select id="setMinute">
+            <option value="0">minute</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            <option>48</option>
+            <option>49</option>
+            <option>50</option>
+            <option>51</option>
+            <option>52</option>
+            <option>53</option>
+            <option>54</option>
+            <option>55</option>
+            <option>56</option>
+            <option>57</option>
+            <option>58</option>
+            <option>59</option>
+        </select>
+    </div>
+    <button class="setTimerButton">Set Alarm</button>
+    </div>
+
+    <!-- Second Screen -->
+    <div class="timer">
+        <h1 class="alarmTimer"><span class="hourShow"></span><span class="minuteShow"></span></h1>
+        <section class="displayAlarmRemainingTime">
+            <h4 class="displayRemainingHour">00 : </h4>
+            <h4 class="displayRemainingMinute">05 : </h4>
+            <h4 class="displayRemainingSecond">08 </h4>
+        </section>
+        <button class="stopTier">Stop Timer</button>
+    </div>
+    </section>
+
+        <!--Setting Wrapper  -->
+        <section class="settingWrapper">
+            <span class="settingWrapperClose"><img src='media/closeButton.png'></span>
+            <h4>Setting</h4>
+            <div class="settingChild">
+                 <div class="socialMediaSetting">
+                    <h4>Social Media</h4>
+                    <form>
+                        <input type="text" placeholder="LinkedIn" class="settingSocialmedia">
+                        <input type="text" placeholder="Twitter" class="settingSocialmedia">
+                        <input type="text" placeholder="Instragram" class="settingSocialmedia">
+                        <input type="text" placeholder="Facebook" class="settingSocialmedia">
+                        <input type="text" placeholder="Github" class="settingSocialmedia">
+                    </form>
+                 </div>
+    
+                 <div class="importantTskSetting">
+                    <h4>Important Task</h4>
+                    <form>
+                        <input type="text" placeholder="Important Links 1" class="settingTask">
+                        <select class="settingTaskCategory">
+                            <option>Education</option>
+                            <option>Professional</option>
+                            <option>Game</option>
+                            <option>Education</option>
+                            <option>Other</option>
+                        </select>
+    
+                        <input type="text" placeholder="Important Links 2" class="settingTask">
+                        <select class="settingTaskCategory">
+                            <option>Education</option>
+                            <option>Professional</option>
+                            <option>Game</option>
+                            <option>Education</option>
+                            <option>Other</option>
+                        </select>
+    
+                        <input type="text" placeholder="Important Links 3" class="settingTask">
+                        <select class="settingTaskCategory">
+                            <option>Education</option>
+                            <option>Professional</option>
+                            <option>Game</option>
+                            <option>Education</option>
+                            <option>Other</option>
+                        </select>
+    
+                        <input type="text" placeholder="Important Links 4" class="settingTask">
+                        <select class="settingTaskCategory">
+                            <option>Education</option>
+                            <option>Professional</option>
+                            <option>Game</option>
+                            <option>Education</option>
+                            <option>Other</option>
+                        </select>
+    
+                        <input type="text" placeholder="Important Links 5" class="settingTask">
+                        <select class="settingTaskCategory">
+                            <option>Education</option>
+                            <option>Professional</option>
+                            <option>Game</option>
+                            <option>Education</option>
+                            <option>Other</option>
+                        </select>
+                    </form>
+                 </div>
+                 
+                 <div class="otherSettingOptions" style="margin-bottom:12em;">
+                    <h4>Data</h4>
+                    <input type="file" placeholder="drop Backup file" class="dropbackUpFile">
+                    <a  id="backupTrigger">Backup</a>
+                    <a  class="dropAllData">Drop all data</a>
+                </div>
+    
+                 <div class="settingSaveButtonWrapper">
+                    <button class="settingSaveButton">Save</button>
+                 </div>
+            </div> 
+            </section>
+
+    <section id="notification"></section>
+
+
+    <!-- <canvas id="my-canvas"></canvas> -->
+    <script type="text/javascript" src="js/Quotes.json"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
